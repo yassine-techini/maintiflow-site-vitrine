@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger la brochure | MaintiFlow</title>
+    <meta name="description" content="Téléchargez la brochure MaintiFlow - Solution GMAO professionnelle.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="canonical" href="https://maintiflow.com/download">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d47a1;
+            --primary-light: #1565c0;
+            --success: #22c55e;
+            --error: #ef4444;
+            --gray-900: #111827;
+            --gray-700: #374151;
+            --gray-500: #6b7280;
+            --gray-100: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 48px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gray-900);
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin: 0 auto 24px;
+        }
+
+        .icon-success { background: rgba(34, 197, 94, 0.1); }
+        .icon-error { background: rgba(239, 68, 68, 0.1); }
+        .icon-loading { background: var(--gray-100); }
+
+        h1 {
+            font-size: 24px;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--gray-500);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
+        }
+
+        .btn-outline {
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--gray-100);
+            margin-top: 12px;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--gray-100);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .state { display: none; }
+        .state.active { display: block; }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--gray-100);
+            color: var(--gray-500);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">M</div>
+            <div class="logo-text">MaintiFlow</div>
+        </div>
+
+        <!-- État: Chargement -->
+        <div class="state active" id="state-loading">
+            <div class="icon icon-loading">
+                <div class="loading-spinner"></div>
+            </div>
+            <h1>Vérification en cours...</h1>
+            <p>Nous vérifions votre lien de téléchargement.</p>
+        </div>
+
+        <!-- État: Succès -->
+        <div class="state" id="state-success">
+            <div class="icon icon-success">📄</div>
+            <h1>Votre brochure est prête !</h1>
+            <p>Cliquez sur le bouton ci-dessous pour télécharger la brochure MaintiFlow.</p>
+            <a href="/brochure-maintiflow.pdf" class="btn btn-primary" download>
+                📥 Télécharger la brochure
+            </a>
+            <br>
+            <a href="/" class="btn btn-outline">
+                Retour au site
+            </a>
+        </div>
+
+        <!-- État: Lien expiré -->
+        <div class="state" id="state-expired">
+            <div class="icon icon-error">⏰</div>
+            <h1>Lien expiré</h1>
+            <p>Ce lien de téléchargement a expiré (validité 24h). Veuillez faire une nouvelle demande pour recevoir un nouveau lien.</p>
+            <a href="/" class="btn btn-primary">
+                Nouvelle demande
+            </a>
+        </div>
+
+        <!-- État: Lien invalide -->
+        <div class="state" id="state-invalid">
+            <div class="icon icon-error">❌</div>
+            <h1>Lien invalide</h1>
+            <p>Ce lien de téléchargement est invalide ou n'existe pas. Veuillez vérifier votre email ou faire une nouvelle demande.</p>
+            <a href="/" class="btn btn-primary">
+                Nouvelle demande
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>MaintiFlow - Un produit <a href="https://maintiflow.com">MaintiFlow</a></p>
+        </div>
+    </div>
+
+    <script>
+        async function checkToken() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token');
+
+            if (!token) {
+                showState('invalid');
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/verify-token?token=${token}`);
+                const data = await response.json();
+
+                if (data.valid) {
+                    showState('success');
+                } else if (data.expired) {
+                    showState('expired');
+                } else {
+                    showState('invalid');
+                }
+            } catch (error) {
+                // En cas d'erreur réseau, on affiche le succès par défaut
+                // car la vérification côté serveur peut être désactivée
+                showState('success');
+            }
+        }
+
+        function showState(state) {
+            document.querySelectorAll('.state').forEach(el => el.classList.remove('active'));
+            document.getElementById(`state-${state}`).classList.add('active');
+        }
+
+        // Vérifier le token au chargement
+        checkToken();
+    </script>
+</body>
+</html>

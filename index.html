@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>MaintiFlow | GMAO Professionnelle - Gestion de Maintenance Assistée par Ordinateur</title>
+    <meta name="description" content="MaintiFlow est une solution GMAO professionnelle pour optimiser la maintenance de votre patrimoine. Disponible en Cloud/SaaS ou On-Premise. Réduisez vos coûts de 40%.">
+    <meta name="keywords" content="GMAO, maintenance, gestion maintenance, CMMS, patrimoine, préventive, curative, stocks, parc automobile, Tunisie, logiciel maintenance, DevFactory">
+    <meta name="author" content="DevFactory">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://maintiflow.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maintiflow.com/">
+    <meta property="og:title" content="MaintiFlow | GMAO Professionnelle">
+    <meta property="og:description" content="Solution GMAO nouvelle génération pour optimiser la maintenance de votre patrimoine. Cloud/SaaS ou On-Premise. -40% sur vos coûts de maintenance.">
+    <meta property="og:image" content="https://maintiflow.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="MaintiFlow">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://maintiflow.com/">
+    <meta name="twitter:title" content="MaintiFlow | GMAO Professionnelle">
+    <meta name="twitter:description" content="Solution GMAO nouvelle génération pour optimiser la maintenance de votre patrimoine. Cloud/SaaS ou On-Premise.">
+    <meta name="twitter:image" content="https://maintiflow.com/og-image.png">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MaintiFlow",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, Cloud",
+        "description": "Solution GMAO professionnelle pour la gestion de maintenance assistée par ordinateur. Maintenance préventive, curative, gestion des stocks et parc automobile.",
+        "url": "https://maintiflow.com",
+        "author": {
+            "@type": "Organization",
+            "name": "DevFactory",
+            "url": "https://devfactory.ai"
+        },
+        "offers": {
+            "@type": "Offer",
+            "category": "SaaS, On-Premise"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "50"
+        },
+        "featureList": [
+            "Maintenance Préventive",
+            "Maintenance Curative", 
+            "Gestion des Stocks",
+            "Parc Automobile",
+            "Tableaux de Bord",
+            "Interface Responsive"
+        ]
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MaintiFlow",
+        "url": "https://maintiflow.com",
+        "logo": "https://maintiflow.com/favicon.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+216-58-130-482",
+            "contactType": "sales",
+            "email": "contact@maintiflow.com",
+            "availableLanguage": ["French", "Arabic", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tunis",
+            "addressCountry": "TN"
+        },
+        "sameAs": [
+            "https://devfactory.ai"
+        ]
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d47a1;
+            --primary-light: #1565c0;
+            --primary-dark: #0a3d8f;
+            --accent: #42a5f5;
+            --success: #22c55e;
+            --gray-900: #111827;
+            --gray-700: #374151;
+            --gray-500: #6b7280;
+            --gray-300: #d1d5db;
+            --gray-100: #f3f4f6;
+            --gray-50: #f9fafb;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-700);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 { font-weight: 700; color: var(--gray-900); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.5);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--primary);
+            padding: 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--white);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            color: var(--white);
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--white); }
+
+        .nav-btn {
+            background: var(--white);
+            color: var(--primary);
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 140px 0 80px;
+        }
+
+        .hero .container {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .hero-content { color: var(--white); }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 48px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: rgba(255,255,255,0.9);
+            font-size: 18px;
+            margin-bottom: 32px;
+            line-height: 1.7;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 24px;
+            margin-top: 48px;
+            justify-content: center;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 24px 28px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat h3 {
+            color: var(--white);
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        .stat p {
+            color: rgba(255,255,255,0.8);
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        /* Dashboard Preview */
+        .dashboard {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.2);
+        }
+
+        .dash-header {
+            background: var(--gray-100);
+            padding: 14px 18px;
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .dash-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dash-dot:nth-child(1) { background: #ef4444; }
+        .dash-dot:nth-child(2) { background: #f59e0b; }
+        .dash-dot:nth-child(3) { background: #22c55e; }
+
+        .dash-content { padding: 24px; }
+
+        .dash-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .dash-card {
+            background: var(--gray-50);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .dash-card-icon {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .dash-card h4 {
+            color: var(--primary);
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .dash-card p {
+            color: var(--gray-500);
+            font-size: 13px;
+        }
+
+        .dash-chart {
+            background: var(--gray-50);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            height: 120px;
+        }
+
+        .chart-bar {
+            flex: 1;
+            background: linear-gradient(180deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .chart-bar:hover { opacity: 0.8; }
+
+        .chart-bar:nth-child(1) { height: 55%; }
+        .chart-bar:nth-child(2) { height: 80%; }
+        .chart-bar:nth-child(3) { height: 45%; }
+        .chart-bar:nth-child(4) { height: 95%; }
+        .chart-bar:nth-child(5) { height: 70%; }
+        .chart-bar:nth-child(6) { height: 85%; }
+
+        /* Sections */
+        section { padding: 80px 0; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        .section-title span { color: var(--primary); }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-500);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Features */
+        .features { background: var(--gray-50); }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 36px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(13, 71, 161, 0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .feature-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--primary);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--gray-500);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Benefits */
+        .benefits { background: var(--white); }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .benefits-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .benefit-stat {
+            background: var(--gray-50);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+        }
+
+        .benefit-stat h3 {
+            font-size: 48px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .benefit-stat p {
+            color: var(--gray-500);
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .benefits-list {
+            list-style: none;
+        }
+
+        .benefits-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.2s;
+        }
+
+        .benefits-list li:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 20px rgba(13, 71, 161, 0.1);
+        }
+
+        .benefit-check {
+            width: 28px;
+            height: 28px;
+            background: rgba(13, 71, 161, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .benefit-check svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--primary);
+            fill: none;
+            stroke-width: 3;
+        }
+
+        .benefit-text h4 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .benefit-text p {
+            font-size: 14px;
+            color: var(--gray-500);
+            margin: 0;
+        }
+
+        /* Modules */
+        .modules { background: var(--gray-50); }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .module-card {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 28px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+        }
+
+        .module-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 8px 30px rgba(13, 71, 161, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .module-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(13, 71, 161, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .module-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--primary);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .module-card h4 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .module-card p {
+            font-size: 13px;
+            color: var(--gray-500);
+        }
+
+        /* CTA */
+        .cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        }
+
+        .cta-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 36px;
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gray-900);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand .logo-icon { background: var(--primary); color: var(--white); }
+        .footer-brand .logo-text { color: var(--white); }
+
+        .footer-brand p {
+            color: var(--gray-500);
+            font-size: 14px;
+            margin-top: 16px;
+            line-height: 1.7;
+        }
+
+        .footer-devfactory {
+            color: var(--gray-500);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        .footer-devfactory a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul { list-style: none; }
+
+        .footer-col li { margin-bottom: 12px; }
+
+        .footer-col a {
+            color: var(--gray-500);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover { color: var(--accent); }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+            color: var(--gray-500);
+        }
+
+        .footer-bottom a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-legal a { color: var(--gray-500); }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal {
+            background: var(--white);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+            animation: modalSlide 0.3s ease;
+        }
+
+        @keyframes modalSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            padding: 28px 32px;
+            border-bottom: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            font-size: 22px;
+        }
+
+        .modal-close {
+            width: 36px;
+            height: 36px;
+            background: var(--gray-100);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--gray-500);
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            background: var(--gray-200);
+            color: var(--gray-700);
+        }
+
+        .modal-body { padding: 32px; }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(13, 71, 161, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .form-note {
+            font-size: 12px;
+            color: var(--gray-500);
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .success-message.active { display: block; }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(13, 71, 161, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: var(--primary);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .success-message h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .success-message p {
+            color: var(--gray-500);
+            font-size: 15px;
+        }
+
+        /* Loading */
+        .btn.loading {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .btn.loading::after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            border: 2px solid transparent;
+            border-top-color: currentColor;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-left: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero p { max-width: none; margin: 0 auto 32px; }
+            .hero-btns { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .dashboard { max-width: 600px; margin: 40px auto 0; }
+
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid { grid-template-columns: 1fr; gap: 48px; }
+            .modules-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+
+            .hero h1 { font-size: 36px; }
+            .hero-stats { flex-wrap: wrap; gap: 16px; }
+            .stat { flex: 1; min-width: 140px; }
+
+            section { padding: 60px 0; }
+
+            .section-title { font-size: 32px; }
+
+            .features-grid { grid-template-columns: 1fr; }
+            .modules-grid { grid-template-columns: repeat(2, 1fr); }
+            .dash-grid { grid-template-columns: 1fr; }
+
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+
+            .form-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon">M</div>
+                <div class="logo-text">MaintiFlow</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#benefits">Avantages</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-btn" onclick="openModal('demo')">Demander une démo</button>
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    Solution certifiée ISO
+                </div>
+                <h1>La GMAO professionnelle pour votre organisation</h1>
+                <p>Optimisez la gestion de votre patrimoine technique avec une solution fiable, sécurisée et conforme aux standards internationaux.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-white" onclick="openModal('demo')">
+                        Planifier une démo
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline" onclick="openModal('brochure')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Télécharger la brochure
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>-40%</h3>
+                        <p>Coûts maintenance</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99.5%</h3>
+                        <p>Disponibilité SLA</p>
+                    </div>
+                    <div class="stat">
+                        <h3>+50</h3>
+                        <p>Références clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Nos Solutions</div>
+                <h2 class="section-title">Une suite <span>complète</span> et modulaire</h2>
+                <p class="section-subtitle">Tous les outils nécessaires pour une gestion de maintenance performante.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    </div>
+                    <h3>Maintenance Préventive</h3>
+                    <p>Plans de maintenance conformes aux normes ISO. Planification automatique selon calendriers ou compteurs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3>Maintenance Curative</h3>
+                    <p>Gestion des demandes d'intervention, assignation intelligente et suivi en temps réel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Gestion des Stocks</h3>
+                    <p>Inventaire des pièces de rechange, alertes de seuil et commandes automatiques.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-1.4-2.8A2 2 0 0 0 14.8 6H9.2a2 2 0 0 0-1.8 1.2L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <h3>Parc Automobile</h3>
+                    <p>Gestion complète de votre flotte : kilométrage, carburant, assurances et contrôles techniques.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
+                    <h3>Tableaux de Bord</h3>
+                    <p>KPIs en temps réel : MTBF, MTTR, disponibilité et coûts par équipement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>Interface Responsive</h3>
+                    <p>Accès web optimisé pour tous les appareils : PC, tablette et smartphone. Travaillez de partout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-visual">
+                    <div class="section-label">Résultats mesurables</div>
+                    <h2 class="section-title">Des bénéfices <span>concrets</span></h2>
+                    <div class="benefits-stats">
+                        <div class="benefit-stat">
+                            <h3>-40%</h3>
+                            <p>Coûts de maintenance</p>
+                        </div>
+                        <div class="benefit-stat">
+                            <h3>+60%</h3>
+                            <p>Productivité équipes</p>
+                        </div>
+                        <div class="benefit-stat">
+                            <h3>-70%</h3>
+                            <p>Pannes imprévues</p>
+                        </div>
+                        <div class="benefit-stat">
+                            <h3>100%</h3>
+                            <p>Traçabilité</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-label">Pourquoi MaintiFlow</div>
+                    <h2 class="section-title">Nos <span>engagements</span></h2>
+                    <ul class="benefits-list">
+                        <li>
+                            <div class="benefit-check">
+                                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Déploiement rapide</h4>
+                                <p>Installation en quelques jours. Formation complète incluse.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-check">
+                                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Cloud/SaaS ou On-Premise</h4>
+                                <p>Choisissez votre mode de déploiement selon vos besoins. Sécurité et chiffrement SSL.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-check">
+                                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Support local dédié</h4>
+                                <p>Équipe basée en Tunisie. Assistance en français et arabe.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-check">
+                                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>ROI garanti</h4>
+                                <p>Retour sur investissement en moins de 6 mois.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules" id="modules">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Architecture modulaire</div>
+                <h2 class="section-title">Choisissez vos <span>modules</span></h2>
+                <p class="section-subtitle">Activez uniquement les fonctionnalités dont vous avez besoin.</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h4>Patrimoine</h4>
+                    <p>Bâtiments & installations</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-1.4-2.8A2 2 0 0 0 14.8 6H9.2a2 2 0 0 0-1.8 1.2L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <h4>Parc Auto</h4>
+                    <p>Véhicules & carburant</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h4>Interventions</h4>
+                    <p>DT, BT, préventif</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h4>Stocks</h4>
+                    <p>Pièces & consommables</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h4>Achats</h4>
+                    <p>DA, BC, facturation</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h4>Contrats</h4>
+                    <p>Sous-traitance & SLA</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Équipes</h4>
+                    <p>Techniciens & planning</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                    </div>
+                    <h4>Reporting</h4>
+                    <p>KPIs & exports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à optimiser votre maintenance ?</h2>
+                <p>Demandez une démonstration personnalisée et découvrez comment MaintiFlow peut transformer votre gestion de maintenance.</p>
+                <div class="cta-btns">
+                    <button class="btn btn-white" onclick="openModal('demo')">
+                        Demander une démo gratuite
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <a href="tel:+21658130482" class="btn btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        +216 58 130 482
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">M</div>
+                        <div class="logo-text">MaintiFlow</div>
+                    </a>
+                    <p>Solution GMAO professionnelle pour les entreprises et administrations tunisiennes.</p>
+                    <p class="footer-devfactory">Un produit <a href="https://devfactory.ai">DevFactory</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Produit</h4>
+                    <ul>
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#modules">Modules</a></li>
+                        <li><a href="#">Intégrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@maintiflow.com">contact@maintiflow.com</a></li>
+                        <li><a href="tel:+21658130482">+216 58 130 482</a></li>
+                        <li><a href="#">Tunis, Tunisie</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 MaintiFlow. Développé par <a href="https://devfactory.ai">DevFactory</a></p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Confidentialité</a>
+                    <a href="#">CGU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Démo -->
+    <div class="modal-overlay" id="modal-demo">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Demander une démo</h3>
+                <button class="modal-close" onclick="closeModal('demo')">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="form-demo" class="demo-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="demo-prenom">Prénom *</label>
+                            <input type="text" id="demo-prenom" name="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-nom">Nom *</label>
+                            <input type="text" id="demo-nom" name="nom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-email">Email professionnel *</label>
+                        <input type="email" id="demo-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-telephone">Téléphone *</label>
+                        <input type="tel" id="demo-telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-entreprise">Entreprise / Organisation *</label>
+                        <input type="text" id="demo-entreprise" name="entreprise" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-fonction">Fonction</label>
+                        <input type="text" id="demo-fonction" name="fonction">
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-taille">Taille de l'organisation</label>
+                        <select id="demo-taille" name="taille">
+                            <option value="">Sélectionner...</option>
+                            <option value="1-10">1-10 employés</option>
+                            <option value="11-50">11-50 employés</option>
+                            <option value="51-200">51-200 employés</option>
+                            <option value="201-500">201-500 employés</option>
+                            <option value="500+">Plus de 500 employés</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-message">Message (optionnel)</label>
+                        <textarea id="demo-message" name="message" placeholder="Décrivez brièvement vos besoins..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Envoyer ma demande
+                    </button>
+                    <p class="form-note">Nous vous contacterons sous 24h pour planifier votre démo.</p>
+                </form>
+                <div class="success-message" id="success-demo">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3>Demande envoyée !</h3>
+                    <p>Merci pour votre intérêt. Notre équipe vous contactera dans les 24 heures pour planifier votre démonstration personnalisée.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Brochure -->
+    <div class="modal-overlay" id="modal-brochure">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Télécharger la brochure</h3>
+                <button class="modal-close" onclick="closeModal('brochure')">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="form-brochure" class="brochure-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="brochure-prenom">Prénom *</label>
+                            <input type="text" id="brochure-prenom" name="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="brochure-nom">Nom *</label>
+                            <input type="text" id="brochure-nom" name="nom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="brochure-email">Email *</label>
+                        <input type="email" id="brochure-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="brochure-entreprise">Entreprise / Organisation</label>
+                        <input type="text" id="brochure-entreprise" name="entreprise">
+                    </div>
+                    <div class="form-group">
+                        <label for="brochure-telephone">Téléphone</label>
+                        <input type="tel" id="brochure-telephone" name="telephone">
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Recevoir la brochure
+                    </button>
+                    <p class="form-note">Vous recevrez un email avec le lien de téléchargement (valide 24h).</p>
+                </form>
+                <div class="success-message" id="success-brochure">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3>Email envoyé !</h3>
+                    <p>Vérifiez votre boîte de réception. Le lien de téléchargement est valide pendant 24 heures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal Functions
+        function openModal(type) {
+            document.getElementById(`modal-${type}`).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(type) {
+            document.getElementById(`modal-${type}`).classList.remove('active');
+            document.body.style.overflow = '';
+            // Reset form after close
+            setTimeout(() => {
+                const form = document.getElementById(`form-${type}`);
+                const success = document.getElementById(`success-${type}`);
+                if (form) form.style.display = 'block';
+                if (success) success.classList.remove('active');
+                if (form) form.reset();
+            }, 300);
+        }
+
+        // Close modal on overlay click
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    const type = overlay.id.replace('modal-', '');
+                    closeModal(type);
+                }
+            });
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(modal => {
+                    const type = modal.id.replace('modal-', '');
+                    closeModal(type);
+                });
+            }
+        });
+
+        // Form submission - Demo
+        document.getElementById('form-demo').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            data.type = 'demo';
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('success-demo').classList.add('active');
+                } else {
+                    throw new Error('Erreur lors de l\'envoi');
+                }
+            } catch (error) {
+                alert('Une erreur est survenue. Veuillez réessayer ou nous contacter directement.');
+            } finally {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Form submission - Brochure
+        document.getElementById('form-brochure').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            data.type = 'brochure';
+
+            try {
+                const response = await fetch('/api/brochure', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('success-brochure').classList.add('active');
+                } else {
+                    throw new Error('Erreur lors de l\'envoi');
+                }
+            } catch (error) {
+                alert('Une erreur est survenue. Veuillez réessayer ou nous contacter directement.');
+            } finally {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

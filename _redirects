@@ -1,0 +1,4 @@
+# Redirections Cloudflare Pages
+
+# Page de téléchargement
+/download    /download.html    200

@@ -1,0 +1,19 @@
+# MaintiFlow - Configuration Cloudflare Pages
+# Documentation: https://developers.cloudflare.com/pages/
+
+name = "maintiflow"
+pages_build_output_dir = "."
+compatibility_date = "2024-01-01"
+
+# Variables d'environnement (à configurer dans le dashboard Cloudflare)
+# [vars]
+# RESEND_API_KEY = "re_xxxxx"  # Optionnel - pour l'envoi d'emails via Resend
+
+# KV Namespace pour stocker les tokens
+# À créer via: wrangler kv:namespace create "MAINTIFLOW_KV"
+# [[kv_namespaces]]
+# binding = "MAINTIFLOW_KV"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Configuration des routes
+# Les fichiers dans /functions sont automatiquement déployés comme Functions
